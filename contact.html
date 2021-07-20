@@ -50,19 +50,19 @@
           <h2>Contact Me</h2>
         </div>
     
-      <form action="read.html" method="GET" class="row g-3 needs-validation" novalidate onsubmit="">
+      <form action="contact_success.html" method="GET" class="row g-3 needs-validation" novalidate onsubmit="">
         <div class="col-md-4">
           <label for="firstName" class="form-label">First name</label>
           <input type="text" class="form-control" id="firstName" name="firstName" placeholder="James" required>
-          <div class="valid-feedback">
-            Brilliant!
+          <div class="invalid-feedback">
+            Please enter a valid first name.
           </div>
         </div>
         <div class="col-md-4">
           <label for="lastName" class="form-label">Last name</label>
           <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Beamish" required>
-          <div class="valid-feedback">
-            Superstar!
+          <div class="invalid-feedback">
+            Please enter a valid last name.
           </div>
         </div>
         <div class="col-md-4">
@@ -81,21 +81,21 @@
           <div class="invalid-feedback">
             Please enter a valid phone number with country code in format xx xxx xxx xxx.
           </div>
-          <div class="invalid-feedback">
-            
-          </div>
         </div>
         <div class="col-md-8">
           <label for="searchBox" class="form-label">Location</label>
           <input id="searchBox" class="form-control" name="Address" required />
             <div class="invalid-feedback">
-            Please provide a geographic location for your enquiry.
+            Please provide a valid geographic location for your enquiry.
           </div>
         </div>
-        <div class="col-md-4">
-          <label for="Postcode" class="form-label">Post code</label>
-          <input type="text" class="form-control" id="Postcode">
-        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label" required>Message / Enquiry</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="invalid-feedback">
+            Please enter a valid enquiry.
+          </div>
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
